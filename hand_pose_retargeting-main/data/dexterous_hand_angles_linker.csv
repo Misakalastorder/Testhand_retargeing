@@ -1,0 +1,2 @@
+frame,hand_base_link,index_mcp_roll,index_mcp_pitch,index_pip,middle_mcp_roll,middle_mcp_pitch,middle_pip,ring_mcp_roll,ring_mcp_pitch,ring_pip,pinky_mcp_roll,pinky_mcp_pitch,pinky_pip,thumb_cmc_roll,thumb_cmc_yaw,thumb_cmc_pitch,thumb_mcp,thumb_ip
+0,0.0,-0.03726483897138387,0.43998009921799286,0.3082897852308985,-0.18,1.57,1.57,0.18,0.4115831498129857,1.57,0.18,0.3282629494282721,1.57,-0.2642191125184427,0.4948910655387194,0.7152046469065411,0.23652571702350053,0.021974405790517793
