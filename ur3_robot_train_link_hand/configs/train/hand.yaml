@@ -1,0 +1,25 @@
+DATASET:
+  TRAIN:
+    SOURCE_NAME: "SignWithHand"
+    SOURCE_PATH: "./data/source/vp/train"
+    TARGET_NAME: "LinkerHand"
+    TARGET_PATH: "./data/target/linkerhand"
+  TEST:
+    SOURCE_NAME: "SignWithHand"
+    SOURCE_PATH: "./data/source/vp/test"
+    TARGET_NAME: "LinkerHand"
+    TARGET_PATH: "./data/target/linkerhand"
+MODEL:
+  NAME: "HandNet"
+HYPER:
+  EPOCHS: 10
+  BATCH_SIZE: 16
+  LEARNING_RATE: 0.0001
+LOSS:
+  FIN: True
+  REG: True
+OTHERS:
+  SAVE: "./saved/models/hand"
+  LOG: "./saved/log/hand"
+  SUMMARY: "./saved/runs/hand"
+  LOG_INTERVAL: 100
