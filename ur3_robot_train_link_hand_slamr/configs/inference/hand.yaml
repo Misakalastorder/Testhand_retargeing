@@ -1,0 +1,27 @@
+DATASET:
+  TEST:
+    SOURCE_NAME: "SignWithHand"
+    SOURCE_PATH: "./data/source/vp/test"
+    TARGET_NAME: "LinkerHand"
+    TARGET_PATH: "./data/target/linkerhand"
+MODEL:
+  NAME: "HandNet"
+  CHECKPOINT: "./saved/models/hand/best_model_epoch_0009.pth"
+HYPER:
+  EPOCHS: 100
+  BATCH_SIZE: 16
+  LEARNING_RATE: 0.0001
+LOSS:
+  FIN: True
+  REG: True
+INFERENCE:
+  MOTION:
+    SOURCE: './data/source/vp/test/h5/test_glove_data0204_aligned.h5'
+    KEY: '测试-ceshi'
+  H5:
+    BOOL: True
+    PATH: './saved/h5'
+OTHERS:
+  LOG: "./saved/log/hand"
+  SUMMARY: "./saved/runs/hand"
+  LOG_INTERVAL: 100

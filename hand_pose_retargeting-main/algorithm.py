@@ -29,8 +29,6 @@ class RetargetConfig:
     finger_lengths: Tuple[float, float, float] = (0.040, 0.030, 0.020) # 示例值，可微调
     thumb_lengths: Tuple[float, float, float] = (0.035, 0.030, 0.025)
 
-
-
 def _safe_norm(v: np.ndarray) -> float:
 	n = float(np.linalg.norm(v))
 	return n if n > EPS else EPS
